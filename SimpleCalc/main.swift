@@ -53,7 +53,7 @@ func complexSolve(operand:String, intArray:[Int]) -> Int {
         }
         return total / intArray.count
     default:
-        return 0
+        return -1
     }
 }
 
@@ -92,7 +92,7 @@ func runCalc() -> Int {
 }
 
 let result = runCalc()
-if result == 0 {
+if result == -1 {
     print("The operand that you entered didn't match any of ours. Try again.")
 }
 else {
